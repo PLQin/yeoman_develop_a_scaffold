@@ -6,30 +6,28 @@
 
 首先确保自己已经安装了nodejs
 
-然后安装yeoman
+然后安装 yeoman
 
 ```js
 npm install -g yo
 ```
 
-
-然后安装脚手架
-
-```js
-npm install -g generator-xcx
+接着将项目导入到 yeoman的 node_modules中
+```
+npm link
 ```
 
 
 在自己的空项目中运行：
 
 ```js
-yo reactpackage
+yo xcx
 ```
 
 然后就会在此目录下生成以下目录结构：
 
-    ├── data
-    │   └── test.json
+    ├── build
+    │   └── newpage.js
     ├── src
     │   ├── components
     │   │   └── App.js
@@ -45,27 +43,18 @@ yo reactpackage
     ├── index.html
     ├── package.json
     └── webpack.config.js
+    ...
 
 
-然后使用以下命令启动服务：
+然后使用以下命令开始监听 pug：
 
 ```js
 npm run dev
 ```
-本项目默认监听端口是8888，所以在浏览器输入 [http://localhost:8888](http://localhost:8888) 就能看到效果了。
-
-如果项目运行正常，会看到如下效果：
-
-![](https://img.alicdn.com/tps/TB1VKFhNXXXXXXCaXXXXXXXXXXX-884-217.png)
 
 
-注意：
-- 如果执行上述命令提示错误：`Error: getaddrinfo ENOTFOUND localhost`，在host文件里面添加`127.0.0.1 localhost`即可。
-- 监听端口和实时刷新的功能都能在`webpack.config.js`文件中修改配置
-
-
-开发完成之后，对项目进行打包，使用以下命令：
+也可以使用以下命令新建page：
 
 ```js
-npm run build
+npm run create:page
 ```

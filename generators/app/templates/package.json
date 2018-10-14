@@ -1,22 +1,25 @@
 {
   "name": "xcx",
   "version": "1.0.0",
-  "description": "消小程序",
+  "description": "肉山老师的招聘题目",
   "main": "app.js",
   "scripts": {
     "create:page": "node ./build/newpage.js",
-    "dev" : "gulp watch"
+    "dev": "gulp watch"
   },
   "keywords": [
     "小程序"
   ],
-  "author": "qing",
+  "author": "qingguipeng",
   "license": "ISC",
   "dependencies": {
+    "eslint": "^5.7.0",
     "gulp": "^3.0.0",
-    "gulp-rename": "^1.0.0",
     "gulp-pug": "^4.0.0",
+    "gulp-rename": "^1.0.0",
+    "gulp-stylus": "^2.7.0",
     "inquirer": "^2.0.0",
-    "pug": "^2.0.0"
+    "pug": "^2.0.0",
+    "stylus": "^0.54.5"
   }
 }

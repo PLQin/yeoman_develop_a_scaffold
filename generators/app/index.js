@@ -16,9 +16,15 @@ var Reactpackage = yeoman.Base.extend({
     generateBasic: function() {
         this.directory('pages', 'pages');
         this.directory('utils', 'utils');
+        this.directory('build', 'build');
+        this.directory('config', 'config');
+        this.copy('.editorconfig', '.editorconfig');
+        this.copy('.eslintrc.js', '.eslintrc.js');
         this.copy('app.js', 'app.js');
         this.copy('app.json', 'app.json');
         this.copy('app.wxss', 'app.wxss');
+        this.copy('gulpfile.js', 'gulpfile.js');
+        this.copy('package.json', 'package.json');
         this.copy('project.config.json', 'project.config.json');
     },
     generateClient: function() {
