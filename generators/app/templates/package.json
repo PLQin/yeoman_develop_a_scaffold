@@ -1,0 +1,22 @@
+{
+  "name": "xcx",
+  "version": "1.0.0",
+  "description": "消小程序",
+  "main": "app.js",
+  "scripts": {
+    "create:page": "node ./build/newpage.js",
+    "dev" : "gulp watch"
+  },
+  "keywords": [
+    "小程序"
+  ],
+  "author": "qing",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.0.0",
+    "gulp-rename": "^1.0.0",
+    "gulp-pug": "^4.0.0",
+    "inquirer": "^2.0.0",
+    "pug": "^2.0.0"
+  }
+}
