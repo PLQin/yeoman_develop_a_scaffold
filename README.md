@@ -12,7 +12,7 @@
 npm install -g yo
 ```
 
-接着将项目导入到 yeoman的 node_modules中
+接着将项目导入到 yeoman 的 node_modules中
 ```
 npm link
 ```
@@ -28,25 +28,21 @@ yo xcx
 
     ├── build
     │   └── newpage.js
-    ├── src
-    │   ├── components
-    │   │   └── App.js
-    │   ├── images
-    │   │   └── yeoman.png
-    │   ├── styles
-    │   │   └── app.scss
-    │   ├── vendor
-    │   │   └── jquery.js
-    │   ├── views
-    │   │   └── home.html
-    ├── node_modules
-    ├── index.html
+    ├── config
+    │   └── index.js
+    ├── pages
+    │   └── example
+    │       └── index.js
+    │       └── index.pug
+    │       └── index.styl
+    ├── utils
+    │   └── utils.js
     ├── package.json
-    └── webpack.config.js
+    └── project.config.json
     ...
 
 
-然后使用以下命令开始监听 pug：
+然后使用以下命令开始监听 pug 与 stylus：
 
 ```js
 npm run dev
