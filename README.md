@@ -7,10 +7,15 @@
 首先确保自己已经安装了nodejs
 
 然后安装 yeoman
-
 ```js
 npm install -g yo
 ```
+
+安装gulp-cli 以及bower
+```
+npm install -g gulp-cli bower
+```
+
 
 接着将项目导入到 yeoman 的 node_modules中
 ```
@@ -19,7 +24,6 @@ npm link
 
 
 在自己的空项目中运行：
-
 ```js
 yo xcx
 ```
@@ -43,14 +47,18 @@ yo xcx
 
 
 然后使用以下命令开始监听 pug 与 stylus：
-
 ```js
 npm run dev
 ```
 
 
 也可以使用以下命令新建page：
-
 ```js
 npm run create:page
 ```
+
+---
+
+部分参考:
+- : https://my.oschina.net/liu-xuewei/blog/608435
+- : https://blog.csdn.net/sunscheung/article/details/76037615
